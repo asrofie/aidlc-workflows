@@ -114,6 +114,10 @@ export type TierProjection = {
    *  accounts reject every named model), so a pinned id would hard-fail
    *  installs on lower plans; agents inherit the session model instead. */
   cursor: { model: string | null };
+  /** Hermes agent .md frontmatter: `model:` (provider/model-id) and optional
+   *  `variant:` (reasoning effort). Omitted keys inherit the session's
+   *  Hermes defaults — same inherit-by-omission contract as opencode. */
+  hermes: { model: string | null; variant: OpencodeVariant | null };
 };
 
 export type Harness = keyof TierProjection;
@@ -130,6 +134,7 @@ export const TIER_PROJECTIONS: Record<Tier, TierProjection> = {
     opencode: { model: null, variant: null },
     copilot: { model: null },
     cursor: { model: null },
+    hermes: { model: null, variant: null },
   },
   balanced: {
     // Effort pinned to medium. Balanced is the reviewer tier - both
@@ -143,6 +148,7 @@ export const TIER_PROJECTIONS: Record<Tier, TierProjection> = {
     kiro: { model: null },
     opencode: { model: null, variant: "medium" },
     copilot: { model: null },
+    hermes: { model: null, variant: "medium" },
   },
   templated: {
     // The tier remains a models-dial group for pattern-following work, but the
@@ -154,6 +160,7 @@ export const TIER_PROJECTIONS: Record<Tier, TierProjection> = {
     opencode: { model: null, variant: null },
     copilot: { model: null },
     cursor: { model: null },
+    hermes: { model: null, variant: null },
   },
 };
 

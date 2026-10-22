@@ -167,6 +167,13 @@ export const HARNESS_HONESTY = Object.freeze({
     message:
       "GitHub Copilot runs every agent on the model you choose in its model picker (/model in the Copilot CLI), so a model or effort set here is kept for other tools and changes nothing in GitHub Copilot.",
   }),
+  hermes: Object.freeze({
+    model: true,
+    effort: true,
+    groupEffort: true,
+    message:
+      "Hermes runs every agent on the model you configure via `hermes model` or NVIDIA_API_KEY; model and effort set here are kept for other tools.",
+  }),
 });
 
 type HarnessHonesty = {
@@ -215,6 +222,7 @@ export const HARNESS_PRODUCT_NAMES: Readonly<Record<ModelHarness, string>> = Obj
   kiro: "Kiro CLI",
   "kiro-ide": "Kiro",
   opencode: "opencode",
+  hermes: "Hermes",
 });
 
 // The one sentence setup and doctor show on those harnesses. A recorded policy

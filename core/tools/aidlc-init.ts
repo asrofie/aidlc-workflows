@@ -812,6 +812,7 @@ function modelHarness(value: string): ModelHarness {
     value === "codex" ||
     value === "copilot" ||
     value === "cursor" ||
+    value === "hermes" ||
     value === "kiro" ||
     value === "kiro-ide" ||
     value === "opencode"

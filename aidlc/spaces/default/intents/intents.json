@@ -5,5 +5,12 @@
     "dirName": "261023-issue-1",
     "scope": "express",
     "status": "in-flight"
+  },
+  {
+    "uuid": "01a16932-e3f6-731b-8ade-04eba8c918dc",
+    "slug": "issue-1",
+    "dirName": "261023-issue-1-2",
+    "scope": "express",
+    "status": "in-flight"
   }
 ]

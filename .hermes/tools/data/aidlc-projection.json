@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "distribution": "hermes",
+  "productName": "Hermes",
+  "configNextStep": "open Hermes in this project and run `/aidlc --doctor`",
+  "harnessDir": ".hermes",
+  "managedDirectories": [
+    ".hermes",
+    "aidlc"
+  ],
+  "rootIntegrations": [
+    {
+      "path": ".gitignore",
+      "policy": "managed-block",
+      "marker": "gitignore",
+      "shared": "union",
+      "legacySignatures": {
+        "wholeFileHashes": [
+          "sha256:4b4f0e776936135529da38e9a34758d603a6c9aba9a43460807cd220d108b086"
+        ]
+      }
+    },
+    {
+      "path": "ONBOARDING.md",
+      "policy": "managed-block",
+      "marker": "onboarding",
+      "shared": "union",
+      "legacySignatures": {
+        "wholeFileHashes": [
+          "sha256:4251bcb25ca5d01c47e9470bb506429c998d4e67928e7b24d878dab96e9ff60f"
+        ]
+      }
+    }
+  ],
+  "legacyManagedFileHashes": {
+    ".hermes/agents/aidlc-composer-agent.md": [
+      "sha256:0fda0f273f7cd7b3ff2eb4c5730af3e002f0f93b766c882f5c729401a531eaf8"
+    ],
+    ".hermes/agents/aidlc-pipeline-deploy-agent.md": [
+      "sha256:d90ffbb04f113aea86baacd9a1a4ba7bbe7bd2e950f1cd75b90fa57dafc665e2"
+    ],
+    ".hermes/aidlc-common/conductor.md": [
+      "sha256:c6e83bb88688c6e928c00beff66e9de2b4f7162f0e7c8d4ca2f379856d03b5f8"
+    ],
+    ".hermes/aidlc-common/protocols/stage-definition.md": [
+      "sha256:00a6329d1e14169348daa634a59992f77ade2eb397031f3b0c3417e1bacceff7"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-checkpoint.md": [
+      "sha256:8b8b22ef01fb2e746d96a8628d23b5cf14ae71015cdcd3426d327af7adf47d3f"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-construction.md": [
+      "sha256:f16ada254662f90ede9def72a5ef5e44b4b3496b7637d9ec38e5b1c8463058a7"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-ensemble.md": [
+      "sha256:7862701fa8843d1c6c03796fec5dd1368118fde9aad18227a19465b20484605a"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-learnings.md": [
+      "sha256:e2fdccf56bae9afc61dcf47642ab994e382cff93d6d0c7040bb4efca795cd7bd"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-loopback.md": [
+      "sha256:22d7dbf9ff26726abea3537bcf03088ced55d50dc1d1e47d0b42f4730fc9ebd8"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-recovery.md": [
+      "sha256:83d51207d45b5e527f20ea51d1fd3472f836aee65271a3608f11e08aa04e2e4b"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-reviewer.md": [
+      "sha256:74fd3a2ad9ce61f9c5eb55ad309b65308b12f60f0946f4881e8bf7113481ef45"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-sensors.md": [
+      "sha256:9395d72c4ba3c73bd5de7b8eecfe1c762a2544f59d8cb900512264c744303350"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-summary.md": [
+      "sha256:8f0a9f556283ad730241d933102112e5968a0d343d8177ed788e7ff5339fc9be"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-swarm.md": [
+      "sha256:8d4cfecbc529686338ef99c06c13c4df680ada16bc585fa91093a4367d21208d"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol-wave.md": [
+      "sha256:0b5a230ee04f4667e0cad6fadd14b01f91ae2f373f3b7ea78b471c2e45751a24"
+    ],
+    ".hermes/aidlc-common/protocols/stage-protocol.md": [
+      "sha256:44d6c963b65a2e2428fd345bd83a8ff48e55893c4f464a798aa93bee2e35e83c"
+    ],
+    ".hermes/aidlc-common/stages/construction/build-and-test.md": [
+      "sha256:212a8a84713fc9a20e332e6e9fe996a46919d7b20d2db6308eb8f22a166f5169"
+    ],
+    ".hermes/aidlc-common/stages/construction/ci-pipeline.md": [
+      "sha256:9454fd6ae77995c1d96fe1a6ad0d36484062cd6b22a54ec567fbc1e0ba4c08a8"
+    ],
+    ".hermes/aidlc-common/stages/construction/code-generation.md": [
+      "sha256:e2282ae32ddb3b96bb25c21449075925787011ffab429763f18b3e22f13b7ddf"
+    ],
+    ".hermes/aidlc-common/stages/construction/functional-design.md": [
+      "sha256:0157b80328b52bd2a5cc82cf43aea484763844a4ad742d6ad9bf3ee94b0a32d6"
+    ],
+    ".hermes/aidlc-common/stages/construction/infrastructure-design.md": [
+      "sha256:5fb480160f5fa205c342d0084efbfe0df78bf069b961e2fb75df1bd3ae4bc416"
+    ],
+    ".hermes/aidlc-common/stages/construction/nfr-design.md": [
+      "sha256:76d131332a74e44ffd86cf069ccf5c6cbd5d2fbc0b7ec6c679a936e84f5ccd9c"
+    ],
+    ".hermes/aidlc-common/stages/construction/nfr-requirements.md": [
+      "sha256:e2ce9d3c6cf4cb82c6feef99555bf5b63d73dae2dd2baad5c950f219e8d8704b"
+    ],
+    ".hermes/aidlc-common/stages/ideation/approval-handoff.md": [
+      "sha256:3c2e04dfce97948f91ea70b82d53f24bee4a41d953ba577b41f0654390c96a47"
+    ],
+    ".hermes/aidlc-common/stages/ideation/feasibility.md": [
+      "sha256:c7f0609cabd761b7409cafc5258c4b609caccf126c5cc43c2be143874ae79db6"
+    ],
+    ".hermes/aidlc-common/stages/ideation/intent-capture.md": [
+      "sha256:256dbc2ff6707e83a0baa5b45b825cea4176caf1205d9739ff030bf65db6f88b"
+    ],
+    ".hermes/aidlc-common/stages/ideation/market-research.md": [
+      "sha256:2ac170367fb969db8255c6cb339e91f5a5a28d0828c961116447e9de73afc556"
+    ],
+    ".hermes/aidlc-common/stages/ideation/rough-mockups.md": [
+      "sha256:a08489c96f545f3fce9354f1ebf00db5dbca674541c4a68a6aede4c5b0fea766"
+    ],
+    ".hermes/aidlc-common/stages/ideation/scope-definition.md": [
+      "sha256:9decf9b445b39f0831d1246c73d8875fff819481e5422073f78e07b32b66b0f1"
+    ],
+    ".hermes/aidlc-common/stages/ideation/team-formation.md": [
+      "sha256:c1fc756ab414c30ddc822f6d339968f28abd7e979499ff067f40d3f9fd9686cd"
+    ],
+    ".hermes/aidlc-common/stages/inception/contract-design.md": [
+      "sha256:a9d21902a55da2805cd6c27bfc91f233fc5e2724e827c6838e0c01a54a7d5d41"
+    ],
+    ".hermes/aidlc-common/stages/inception/delivery-planning.md": [
+      "sha256:edb5d967a5a54893cba5399457be19c759a7f59368a68f93dad66a997899fd4d"
+    ],
+    ".hermes/aidlc-common/stages/inception/domain-design.md": [
+      "sha256:3b52eda743cc88ca14c16239c4a6d2aa13228d1f450742fb530ba31a5b3bb060"
+    ],
+    ".hermes/aidlc-common/stages/inception/practices-discovery.md": [
+      "sha256:342fc5ba9988bd57f51f999539551ff566a3fe3d4f6dbe53d14e41615a742049"
+    ],
+    ".hermes/aidlc-common/stages/inception/refined-mockups.md": [
+      "sha256:363b3e610f2d500f7a33b1fd1c21a170bff826cd167fa17e626dd57bf914ba1b"
+    ],
+    ".hermes/aidlc-common/stages/inception/requirements-analysis.md": [
+      "sha256:398ed292e377ecbe3a2bb949d52b44539823ba7d0a0789576a101a97c33c2fcc"
+    ],
+    ".hermes/aidlc-common/stages/inception/reverse-engineering.md": [
+      "sha256:e3bcf4079dcf2c2f068be8a6c36d480b5d38271ba59e2d30ed0b26b4061e5eea"
+    ],
+    ".hermes/aidlc-common/stages/inception/units-generation.md": [
+      "sha256:61c17a143f3dc7b3b4e6974af651c8b02859cc89abbe17c0531544474fa5eaab"
+    ],
+    ".hermes/aidlc-common/stages/inception/user-stories.md": [
+      "sha256:f7dfbf9cdeeeecd3752959fb0b1e4daf15b3e75d0709489bf6578c651c0bdd2e"
+    ],
+    ".hermes/aidlc-common/stages/initialization/state-init.md": [
+      "sha256:cb781a625b0de452ff5063f869cf8e182f8b52257f1574ae224c1af98460e357"
+    ],
+    ".hermes/aidlc-common/stages/initialization/workspace-detection.md": [
+      "sha256:21f03f5ac8e4be1e251e6b531c837631b98059ea2cfb7d4e9690cd9b4b7be02d"
+    ],
+    ".hermes/aidlc-common/stages/operation/deployment-execution.md": [
+      "sha256:27161dc0581fdcda2a6b4cf4dc4026b23f6ac9b196b48c7fd435b45353ffe2fc"
+    ],
+    ".hermes/aidlc-common/stages/operation/deployment-pipeline.md": [
+      "sha256:2b14c170756ab97e731e7429a6ff7b3f71531679e8b98d89892e77a94fbade32"
+    ],
+    ".hermes/aidlc-common/stages/operation/environment-provisioning.md": [
+      "sha256:6c10f5bf62585ee6526d2b805e9a96a43ed2fb3068d7a2ed3fe2db4b2784d507"
+    ],
+    ".hermes/aidlc-common/stages/operation/feedback-optimization.md": [
+      "sha256:0a25f3fe3ad246f2998e3e00dcc6628a9b0693ae9c4aade079c8414ef50e4cb4"
+    ],
+    ".hermes/aidlc-common/stages/operation/incident-response.md": [
+      "sha256:22e7737bdd1a6590e2ad7e3c94069da8f7532ad0fd74ae726e08c14afee364c3"
+    ],
+    ".hermes/aidlc-common/stages/operation/observability-setup.md": [
+      "sha256:5a0f9d842204deb937579da4e392a992d6d9228b138d38b31541e5003d3b1581"
+    ],
+    ".hermes/aidlc-common/stages/operation/performance-validation.md": [
+      "sha256:6f9991036dec3324978dea8359826f9556d90b191fc9d02259e4ac0554d871fe"
+    ],
+    ".hermes/hooks/aidlc-hermes-adapter.ts": [
+      "sha256:39f0416133ee06bf093259d64926854511228ac9b81932f2993fd5151bf1569c"
+    ],
+    ".hermes/hooks/aidlc-rebuild-stage-graph.ts": [
+      "sha256:368ab994cef731b66f2f1c145d5cc81e8ee211ae7565451bc7a41341260c37b6"
+    ],
+    ".hermes/hooks/aidlc-statusline.ts": [
+      "sha256:bf6f1d1ff218cf8c907a1a511178e72ea59d5b6beaedf4bbf2ffc08e20815ee8"
+    ],
+    ".hermes/knowledge/aidlc-composer-agent/composing.md": [
+      "sha256:209b8ca9b85af7fdcf96b68e9b403b617d7ac22fdd6a7435eb9de6a1ea407754"
+    ],
+    ".hermes/knowledge/aidlc-developer-agent/re-artifacts.md": [
+      "sha256:0d8222bedaed994775df5f0cd6ddbce142f459eb5e05835e220fd5516ac92180"
+    ],
+    ".hermes/knowledge/aidlc-pipeline-deploy-agent/branching-strategies.md": [
+      "sha256:304f35cd060ccc59e513f6df54b7cece0e2a4a5986263e343a1a1955c070fb72"
+    ],
+    ".hermes/knowledge/aidlc-shared/audit-format.md": [
+      "sha256:0302c9881e83ec64e6791423f9f1d58f128d49e3c69bb18b8adb7823c3e4e113"
+    ],
+    ".hermes/knowledge/aidlc-shared/state-template.md": [
+      "sha256:2538675c1e9e6a48711146377e34c7e74b9d8dd00ba6506da1beb8c857505048"
+    ],
+    ".hermes/knowledge/aidlc-shared/worktree-info-schema.md": [
+      "sha256:789bf9e69a569ddc30fd665ff2d75041f0e657ecff73935b10f3b9a94e79ef04"
+    ],
+    ".hermes/sensors/aidlc-claim-sources.md": [
+      "sha256:4e3a59eac73cfee0a9cbba765dbd953d4e7f15f1a89497c12567de0ec703ca34"
+    ],
+    ".hermes/sensors/aidlc-linter.md": [
+      "sha256:b19cf70b27cec8c16a824eb97390ae16feea638be6c4caa18676eb06cf90daac"
+    ],
+    ".hermes/sensors/aidlc-required-sections.md": [
+      "sha256:446553b8b840ced452ab0a560d00bc23d3b2c45664f87f45999b7170e91d0081"
+    ],
+    ".hermes/sensors/aidlc-traceability.md": [
+      "sha256:de55d591d6f7d45994fc992eb7429927d7a563080adafb806d855119cb528d9f"
+    ],
+    ".hermes/sensors/aidlc-type-check.md": [
+      "sha256:2e208ad6f3d96971de4ae0def3aa6216a8b3f4a14a3a2e56521901ccf5de5c74"
+    ],
+    ".hermes/sensors/aidlc-upstream-coverage.md": [
+      "sha256:b64cd9364ad714846978485a1074d4d152908e9231c8771776727da3b3a180bc"
+    ],
+    ".hermes/skills/aidlc/SKILL.md": [
+      "sha256:5af33b1ffd9067e6cb505f15b80963e6ca53a642ab633ccb0e3a563a871821ee"
+    ],
+    ".hermes/skills/aidlc/composer.md": [
+      "sha256:22fd1cbe50e63c062bea6aaffa29d5ad1526c7cd23212ff7f2a7d7c814c2198d"
+    ],
+    ".hermes/skills/aidlc-approval-handoff/SKILL.md": [
+      "sha256:7744302326643abccea96267c5f4361c5584a40a5ffaf9156f34d8d8ad50c833"
+    ],
+    ".hermes/skills/aidlc-bugfix/SKILL.md": [
+      "sha256:5f0ac67ff126c35e1a3a7fc0c467e3415ed002b9fab24b0b1296e1ca940e8129"
+    ],
+    ".hermes/skills/aidlc-build-and-test/SKILL.md": [
+      "sha256:741a5af80075737d23d84ca855c1b2296b4647d7646ceb0b2b6fa491b67b28ca"
+    ],
+    ".hermes/skills/aidlc-ci-pipeline/SKILL.md": [
+      "sha256:44aa7c13bc1dcc52a71f6df29eb95291f7f13d509c6ee34653786b870636882f"
+    ],
+    ".hermes/skills/aidlc-code-generation/SKILL.md": [
+      "sha256:e98cc9f4b3eac755ba88a5e98d5940b2f8ffff2e22d624539b04b128c9fb499f"
+    ],
+    ".hermes/skills/aidlc-compose/SKILL.md": [
+      "sha256:fc3c4ff223b01167237cfa4a2ea894472117705c03186167750a21d981b4f0f3"
+    ],
+    ".hermes/skills/aidlc-contract-design/SKILL.md": [
+      "sha256:f524fac905629dd60362649e3cc2c5202df0f38a6d18919a3e1816d261360141"
+    ],
+    ".hermes/skills/aidlc-delivery-planning/SKILL.md": [
+      "sha256:1cf104e3cac345a639b7f0405c3b021099f45921b66d8a7cd9a2cbcfb836d748"
+    ],
+    ".hermes/skills/aidlc-deployment-execution/SKILL.md": [
+      "sha256:44556716715e37def6e42114cc1e53a8ca0be4cf2939b2a410702e46ec6bc699"
+    ],
+    ".hermes/skills/aidlc-deployment-pipeline/SKILL.md": [
+      "sha256:0f5cfe7e388435662b1b49001d52ac160c1f725930eafe9429e13152b6f2a83d"
+    ],
+    ".hermes/skills/aidlc-domain-design/SKILL.md": [
+      "sha256:7233536c46a7b0037b64b77c7a35ba7d8f154aee3f0265074f8994b9943b5ec8"
+    ],
+    ".hermes/skills/aidlc-environment-provisioning/SKILL.md": [
+      "sha256:ba5e04c048b9973029cc331aa92e37fe12707a53dcdf0651e2d605164aaa9c04"
+    ],
+    ".hermes/skills/aidlc-express/SKILL.md": [
+      "sha256:9345336a6fcc6ff273f39445defe4ff550f20ad55d73ca11b39a077049280874"
+    ],
+    ".hermes/skills/aidlc-feasibility/SKILL.md": [
+      "sha256:5af1e0e184f341dad80c2b9ae17c072941651204c2ae754d3fc62d2d080889d8"
+    ],
+    ".hermes/skills/aidlc-feature/SKILL.md": [
+      "sha256:a311e8a3a019648212115f01cfc1f43f296d033e56267684ceacf76559f4510d"
+    ],
+    ".hermes/skills/aidlc-feedback-optimization/SKILL.md": [
+      "sha256:0ab98cb99f63f3117517004e26507b88ca5eb41f35f31f6fcdae654361dbb6f9"
+    ],
+    ".hermes/skills/aidlc-functional-design/SKILL.md": [
+      "sha256:3bd5ad65a87c86eceeb60b725267e1faa2858d808ef6e6f07a5223cfbb2f367c"
+    ],
+    ".hermes/skills/aidlc-incident-response/SKILL.md": [
+      "sha256:f380d6839c3f6fdb062fa3a61ecd5dcfac96437a87c9f5daad91b4d3caf47a3f"
+    ],
+    ".hermes/skills/aidlc-infrastructure-design/SKILL.md": [
+      "sha256:dcde7d14c15171e5da737d714d76a07d202e06b8be1f2d0a0ff2eb537a2977ce"
+    ],
+    ".hermes/skills/aidlc-init/SKILL.md": [
+      "sha256:2e3e5a2024c17763f6572c2a3316e4fb9caf71964b2071d14cae3f87120e71fe"
+    ],
+    ".hermes/skills/aidlc-intent-capture/SKILL.md": [
+      "sha256:2a664a558d3db617c5d6f942a1c82460b55c39a8e6e279e628be23d7ba321ee9"
+    ],
+    ".hermes/skills/aidlc-knowledge/SKILL.md": [
+      "sha256:a784504917d6c6f9aedb62071efd63dee5daf6f1e70f43847461c41b547c303b"
+    ],
+    ".hermes/skills/aidlc-market-research/SKILL.md": [
+      "sha256:328c49bde4abc48ecec7bc0bb6b0f0fe171d432cbc9777920d0f352a72cc0ad5"
+    ],
+    ".hermes/skills/aidlc-mvp/SKILL.md": [
+      "sha256:f14df2c7b80ba22a7ef82c1ac8ae6f3a8849d5f28a1fce0940940fcf305126e8"
+    ],
+    ".hermes/skills/aidlc-nfr-design/SKILL.md": [
+      "sha256:2ad596c5efc9cbaeb0c28f4c072e56a28e8d75b3121d14e3401d9b01dfef0ef0"
+    ],
+    ".hermes/skills/aidlc-nfr-requirements/SKILL.md": [
+      "sha256:6c3dccf246464706d6cbac2be72bd691af530a31a8d8124feb6d6ea08404284c"
+    ],
+    ".hermes/skills/aidlc-observability-setup/SKILL.md": [
+      "sha256:e81265a18d67e74b89b3cd60163dc740a2c48fe23045ee51c2ef8eb5f10f5726"
+    ],
+    ".hermes/skills/aidlc-outcomes-pack/SKILL.md": [
+      "sha256:fb13999f9bb8ec53159b9b4a31f4462888e9b4a268aa720d38b9746764e50860"
+    ],
+    ".hermes/skills/aidlc-performance-validation/SKILL.md": [
+      "sha256:e42f8e85e665e7ea0562d425d33e12fad337973600c196be3c2e88979b88e3f4"
+    ],
+    ".hermes/skills/aidlc-practices-discovery/SKILL.md": [
+      "sha256:91eb9e12ddbd8536f4eeb077dd27c5ff5383994c90057c327f750ddcba1848d3"
+    ],
+    ".hermes/skills/aidlc-refined-mockups/SKILL.md": [
+      "sha256:c665fdca1ab5a6827620225626be332b1166e119b5d96ad1838db4c93624803b"
+    ],
+    ".hermes/skills/aidlc-replay/SKILL.md": [
+      "sha256:f18add8063467a750751a6d9ea3421165b59a325d21e010acceca5dd4c8058ff"
+    ],
+    ".hermes/skills/aidlc-requirements-analysis/SKILL.md": [
+      "sha256:0e2b94e6347ae6249a9f2aac7044201ced51bbacaf438332892238547a6971a9"
+    ],
+    ".hermes/skills/aidlc-reverse-engineering/SKILL.md": [
+      "sha256:1fc1f1685b288f5999c0913d86116952447e0c7f17362003552ae1615f88132a"
+    ],
+    ".hermes/skills/aidlc-rough-mockups/SKILL.md": [
+      "sha256:64198ecc25b53e4bdd890626586dbfb6b54dea40893fba98a30e7234eade6829"
+    ],
+    ".hermes/skills/aidlc-scope-definition/SKILL.md": [
+      "sha256:89f279b0a465fd17c7a1a299c708510f44a19a70581fc183e177e7da22c759bd"
+    ],
+    ".hermes/skills/aidlc-security-patch/SKILL.md": [
+      "sha256:fb2c629308f1facd7745c080f4f78d60023297e381fbee7af02e57a7237957df"
+    ],
+    ".hermes/skills/aidlc-session-cost/SKILL.md": [
+      "sha256:81f2f93998a0fafaabdfe0e030d30a581afa4e99ba6cb6b51a2cfa101faf7d04"
+    ],
+    ".hermes/skills/aidlc-team-formation/SKILL.md": [
+      "sha256:13bdf386ea881a9fc86a04a45b7867d17cf5e35dc30a71555def65afc426743f"
+    ],
+    ".hermes/skills/aidlc-units-generation/SKILL.md": [
+      "sha256:d6b39811548e72a76018bb2ed81c629c5513ea9b6cd2a267a1188501d64c9152"
+    ],
+    ".hermes/skills/aidlc-user-stories/SKILL.md": [
+      "sha256:e8ff8c8ddc81d7c3a5a32ea1442073f30dc5fa22d97eda012edcb92394031d5a"
+    ],
+    ".hermes/tools/aidlc-command.ts": [
+      "sha256:1ef247bcd663c6c7c36941009a0f8154fd8ecb86236e560cdc31579ebb9c1de6"
+    ],
+    ".hermes/tools/aidlc-runtime-paths.ts": [
+      "sha256:673a12dea154cf11441c45c9c21a067108bf4c31a6d95581e7fbbc7906de2bb5"
+    ],
+    ".hermes/tools/data/aidlc-projection.json": [
+      "sha256:c32cd2f19bf75beaed3fbcb516afe925f770ba20d28179cf1420bb877cb214d9"
+    ],
+    ".hermes/tools/data/root-blocks/onboarding": [
+      "sha256:c694f4aa0bb4a9cd5328c8095ef6662220a129dbee30c498ed4edd00b8d151bc"
+    ]
+  }
+}

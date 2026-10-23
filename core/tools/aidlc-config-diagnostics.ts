@@ -110,9 +110,10 @@ export type ProviderKind = "current" | "amazon-bedrock" | "builtin" | "other";
 
 // Kiro CLI and Kiro IDE provide their own model access. AI-DLC has no provider
 // decision to ask, write, or check for them, even when a legacy answer exists.
-export type BedrockOrientedHarness = Exclude<ModelHarness, "kiro" | "kiro-ide">;
+export type BedrockOrientedHarness = Exclude<ModelHarness, "hermes" | "kiro" | "kiro-ide">;
 
 const HARNESS_OWNED_MODEL_ACCESS: ReadonlySet<ModelHarness> = new Set<ModelHarness>([
+  "hermes",
   "kiro",
   "kiro-ide",
 ]);
@@ -556,6 +557,7 @@ export function readConfigDiagnosticRecords(harnessRoot: string): ConfigDiagnost
     distribution !== "codex" &&
     distribution !== "copilot" &&
     distribution !== "cursor" &&
+    distribution !== "hermes" &&
     distribution !== "kiro" &&
     distribution !== "kiro-ide" &&
     distribution !== "opencode"
@@ -919,6 +921,11 @@ const HARNESS_CLI: Record<
     command: "opencode",
     required: true,
     install: "Install opencode and ensure `opencode --version` works.",
+  },
+  hermes: {
+    command: "hermes",
+    required: true,
+    install: "Install Hermes Agent and ensure `hermes --version` works.",
   },
 };
 

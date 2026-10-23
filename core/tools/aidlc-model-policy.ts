@@ -44,6 +44,7 @@ export type ModelHarness =
   | "codex"
   | "copilot"
   | "cursor"
+  | "hermes"
   | "kiro"
   | "kiro-ide"
   | "opencode";

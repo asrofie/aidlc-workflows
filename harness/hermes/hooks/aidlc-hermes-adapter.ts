@@ -456,9 +456,7 @@ async function run(target: string): Promise<number> {
     let allowed = "";
     const refusals: string[] = [];
     for (const member of members) {
-      const said = await collectHookOutput(() =>
-        run(member, rawInput),
-      );
+      const said = await collectHookOutput(() => run(member));
       if (said.code === 2) {
         code = 2;
         if (said.stderr && !refusals.includes(said.stderr)) {

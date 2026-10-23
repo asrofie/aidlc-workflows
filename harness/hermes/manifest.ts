@@ -120,6 +120,7 @@ const manifest: HarnessManifest = {
   // TODO: create these files under harness/hermes/ before packaging.
   harnessFiles: [
     { src: "dot-gitignore", dst: ".gitignore", projectRoot: true },
+    { src: "settings.json", dst: "settings.json" },
     { src: "skills/aidlc/SKILL.md", dst: "skills/aidlc/SKILL.md" },
     { src: "skills/aidlc/question-rendering.md", dst: "skills/aidlc/question-rendering.md" },
     { src: "skills/aidlc/composer.md", dst: "skills/aidlc/composer.md" },

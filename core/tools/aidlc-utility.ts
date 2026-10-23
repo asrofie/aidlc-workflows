@@ -4015,6 +4015,12 @@ export async function collectDoctorReport(
           hashes.every((hash) => seedText.includes(`trusted_hash = "${hash}"`));
       } else if (currentHarnessDir === ".cursor") {
         nativePermission = commands.includes(cursorTrustedShell());
+      } else if (currentHarnessDir === ".hermes") {
+        // Hermes manages its own model access (hermes model / NVIDIA_API_KEY),
+        // so native trust is the project's .hermes/settings.json permissions:
+        // the trusted `aidlc engine *` prefix, no bare Bash.
+        nativePermission = commands.includes(`Bash(${trustedCommand("*")})`) &&
+          !commands.includes("Bash");
       } else if (currentHarnessName === "copilot") {
         // Copilot has no project command allowlist. Its folder-trust contract
         // is checked separately below; this row verifies native hook wiring.

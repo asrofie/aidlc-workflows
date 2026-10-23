@@ -1,0 +1,43 @@
+{
+  "_comment": "Hermes project settings for AI-DLC. Personal overrides go in settings.local.json (gitignored).",
+  "permissions": {
+    "allow": [
+      "Edit(/**)",
+      "Task",
+      "WebSearch",
+      "Bash(aidlc engine *)",
+      "Bash(aidlc engine hook *)",
+      "Bash(aidlc engine adapter *)",
+      "Bash(aidlc engine statusline *)",
+      "Bash(aidlc doctor)",
+      "Bash(aidlc doctor --verbose)",
+      "Bash(aidlc version)",
+      "Bash(aidlc --doctor)",
+      "Bash(aidlc --doctor --verbose)",
+      "Bash(aidlc --version)",
+      "Bash(aidlc status)",
+      "Bash(aidlc --status)",
+      "Bash(aidlc config --help)",
+      "Bash(aidlc config --show)",
+      "Bash(aidlc config --show --json)",
+      "Bash(aidlc config models --show)",
+      "Bash(aidlc config models --show --json)",
+      "Bash(aidlc config models --help)",
+      "Bash(aidlc config runtime --show)",
+      "Bash(aidlc config runtime --show --json)",
+      "Bash(aidlc config runtime --help)",
+      "Bash(aidlc config providers --show)",
+      "Bash(aidlc config providers --show --json)",
+      "Bash(aidlc config providers --help)",
+      "Bash(aidlc config trust --show)",
+      "Bash(aidlc config trust --show --json)",
+      "Bash(aidlc config trust --help)",
+      "Bash(aidlc config flags --show)",
+      "Bash(aidlc config flags --show --json)",
+      "Bash(aidlc config flags --help)",
+      "Bash(aidlc config project --show)",
+      "Bash(aidlc config project --show --json)",
+      "Bash(aidlc config project --help)"
+    ]
+  }
+}
